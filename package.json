@@ -1,0 +1,33 @@
+{
+  "name": "openboard",
+  "version": "1.0.0",
+  "main": "app.js",
+  "engines": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paragmilmile24/Openboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paragmilmile24/Openboard/issues"
+  },
+  "homepage": "https://github.com/paragmilmile24/Openboard#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "heroku": "^7.60.2",
+    "socket.io": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "description": ""
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .size-box{
+            border: 1px solid black;
+            height: 30px;
+            width: 150px;
+            justify-content: space-evenly;
+            align-items: center;
+            display: flex;
+        }
+
+        .size{
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .size1{
+            height: 10px;
+            width: 10px;
+        }
+
+        .size2{
+            height: 14px;
+            width: 14px;
+        }
+
+        .size3{
+            height: 18px;
+            width: 18px;
+        }
+
+        .size4{
+            height: 22px;
+            width: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="size-box">
+        <div class="size1 size"></div>
+        <div class="size2 size"></div>
+        <div class="size3 size"></div>
+        <div class="size4 size"></div>
+    </div>
+</body>
+
+<script>
+    let sizebox = document.querySelector(".size-box");
+
+    sizebox.addEventListener("click",function(e){
+
+        let elems = ["size1","size2","size3","size4"];
+
+        let allClasses = e.target.classList;
+        let firstClass = allClasses[0];
+
+        let isPresent = elems.includes(firstClass);
+
+        if(isPresent){
+            if(firstClass == "size1"){
+                alert("Size 1 cliced");
+            }
+            else if(firstClass == "size2"){
+                alert("Size 2 cliced");
+            }else if(firstClass == "size3"){
+                alert("Size 3 cliced");
+            }else if(firstClass == "size4"){
+                alert("Size 4 cliced");
+            }
+        }
+    })
+</script>
+
+</html>
